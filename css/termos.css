@@ -1,0 +1,77 @@
+:root{
+    --gap40: 2.5rem;
+    --padding20: 1.25rem;
+    --cor-12: #000;
+    --cor-11:#111;
+    --cor-10:#2e2e2e;
+    --cor-9:#404040;
+    --cor-8:#595959;
+    --cor-7:#717171;
+    --cor-6:#9c9c9c;
+    --cor-5: #b2b2b2;
+    --cor-4:#cccccc;
+    --cor-3:#dedede;
+    --cor-2:#ededed;
+    --cor-1:#f7f7f7;
+    --cor-0:#fff;
+    
+    --cor-p1:#ffbb00;
+    --cor-p2:#e4a30b;
+    --cor-p3:#a66f00;
+    --cor-p4:#664400;
+    --cor-p5:#332200;
+}
+
+.titulo-bg{
+    background-color: var(--cor-11);
+    padding-block:3.75rem;
+}
+
+.container-titulo{
+    max-width: 1200px;
+    margin-inline:auto;
+    padding-inline: 1.25rem;
+}
+
+.container-titulo p{
+    color: var(--cor-5);
+    margin-bottom: 4px;
+}
+
+.container-titulo h1{
+    color: var(--cor-0);
+}
+
+
+.container-termos{
+    max-width: 1200px;
+    margin-inline:auto;
+    padding-inline: 1.25rem;
+    padding-block: 5rem;
+    color: var(--cor-10);
+}
+
+.container-termos h2{
+    color: var(--cor-11);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+.container-termos p{
+    margin-bottom: 1.5rem;
+    max-width: 75ch;
+}
+
+/*======================== RESPONSIVIDADE======================*/
+
+@media(max-width:800px){
+    .titulo-bg{
+        padding-block:2.5rem;
+    }
+
+    .container-titulo p{
+        font-size: 1rem;
+        text-transform: lowercase;
+        font-weight: 400;
+    }
+}

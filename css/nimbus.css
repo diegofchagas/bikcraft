@@ -1,0 +1,236 @@
+:root{
+    --gap40: 2.5rem;
+    --padding20: 1.25rem;
+    --cor-12: #000;
+    --cor-11:#111;
+    --cor-10:#2e2e2e;
+    --cor-9:#404040;
+    --cor-8:#595959;
+    --cor-7:#717171;
+    --cor-6:#9c9c9c;
+    --cor-5: #b2b2b2;
+    --cor-4:#cccccc;
+    --cor-3:#dedede;
+    --cor-2:#ededed;
+    --cor-1:#f7f7f7;
+    --cor-0:#fff;
+    
+    --cor-p1:#ffbb00;
+    --cor-p2:#e4a30b;
+    --cor-p3:#a66f00;
+    --cor-p4:#664400;
+    --cor-p5:#332200;
+}
+
+.titulo-bg{
+    background-color: var(--cor-11);
+    padding-block:3.75rem;
+}
+
+.container-titulo{
+    max-width: 1200px;
+    margin-inline:auto;
+    padding-inline: 1.25rem;
+}
+
+.container-titulo p{
+    color: var(--cor-5);
+    margin-bottom: 4px;
+}
+
+.container-titulo h1{
+    color: var(--cor-0);
+}
+
+.container-bicicletas{
+    max-width: 1200px;
+    margin-inline:auto;
+    padding-inline: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: var(--gap40);
+    padding-block: 3.75rem;
+}
+
+.container-bicicletas h2,h3{
+    color: var(--cor-0);
+}
+
+.container-bicicletas p{
+    color: var(--cor-5);
+}
+
+.bicicleta-imagens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.bicicleta-imagens img{
+    flex: 1;
+    min-width: 200px;
+}
+.bicicleta-imagens img:first-child{
+    min-width: 100%;
+}
+
+.bicicleta-conteudo > p{
+    margin-bottom: 2rem;
+}
+
+.bibicleta-comprar{
+display: grid;
+grid-template-columns: max-content auto;
+align-items: center;
+justify-items:start;
+gap: 8px 12px;
+margin-bottom:2.5rem;
+}
+
+.bibicleta-comprar a{
+    grid-row: span 2;
+}
+
+.bibicleta-comprar span{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-12);
+    gap: 8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: var(--cor-5);
+    
+}
+
+.bicicleta-conteudo h2{
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    margin-bottom: 12px;
+}
+
+.bicicleta-informacoes,
+.bicicleta-ficha{
+    padding: 2rem;
+    background-color: var(--cor-12);
+    border-radius: 4px;
+} 
+
+.bicicleta-informacoes{
+    margin-bottom: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.bicicleta-informacoes img{
+    width: 24px;
+    margin-bottom: 8px;
+}
+
+.bicicleta-informacoes h3{
+    margin-bottom: 8px;
+}
+
+.bicicleta-ficha li{
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cor-11);
+    color: var(--cor-5);
+}
+
+.bicicleta-ficha li:last-child{
+    border-bottom: none;
+}
+
+.bicicleta-ficha span{
+    color: var(--cor-6);
+}
+
+.container{
+    max-width: 1200px;
+    margin-inline:auto;
+    padding-inline: 1.25rem;
+}
+
+.container h3{
+    color: var(--cor-11);
+}
+
+#nimbus .container ul{
+    padding: 0px 0px 1.25rem 0px;
+    
+}
+.seguro-bg{
+    background-color: var(--cor-11);
+    box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-12);
+}
+
+.container-seguro{
+    max-width: 1200px;
+    margin-inline:auto;
+    padding-inline: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap40);
+}
+
+.seguro-imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seguro-conteudo {
+    padding-block: 11rem;
+}
+
+.container-seguro h2{
+    color: var(--cor-0);
+    margin-bottom: 2rem;
+}
+.container-seguro p{
+    color: var(--cor-5);
+    margin-bottom: 1.25rem;
+}
+
+/*======================== RESPONSIVIDADE======================*/
+
+
+@media (max-width:800px){
+    .container-bicicletas{
+        grid-template-columns: 1fr;
+        padding-block: 2.5rem;
+    }
+
+    .bicicleta-imagens{
+        grid-row: 2;
+    }
+
+    .seguro-bg{
+        box-shadow: isent 0 -60px var(--cor-12);
+    }
+
+    .container-seguro{
+        grid-template-columns: 1fr;
+    }
+    .seguro-conteudo{
+        grid-row: 1;
+        padding-top: 2.5rem;
+        padding-bottom: 0px;
+    }
+    
+  }
+  
+
+  
+@media (max-width:400px){
+
+ .bicicleta-informacoes{
+    grid-template-columns: 1fr;
+ }
+ .bibicleta-comprar{
+    grid-template-columns: 1fr;
+ }
+  }
